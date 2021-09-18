@@ -1,6 +1,7 @@
 # tp1_tiw8
 
-Pour l'exécution du projet :  
+Pour exécuter le projet :  
+
 1- git clone https://github.com/Fatima-zahra-badi/tp1_tiw8.git  
 2- cd tp1_tiw8  
 3- npm install(pour installer toutes les dépendances)  
