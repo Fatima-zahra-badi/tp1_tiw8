@@ -17,19 +17,21 @@ module.exports = (env, argv) => {
         extensions: ["js", "jsx", "ts", "tsx"],
       }),],
     module: {
+     
       rules: [
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          loader: "file-loader",
+          options: { name: '/static/[name].[ext]' }
+        },
         {
             test: /\.(ts|tsx)$/,
             exclude: /node_modules/,
             use: {
               loader: "ts-loader",
         }
-    },
-    {
-        test: /\.(png|svg|jpg|gif)$/,
-        loader: "file-loader",
-        options: { name: '/static/[name].[ext]' }
-      }
+    }
+   
       ]
     },
     resolve: {

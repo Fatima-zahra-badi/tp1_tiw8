@@ -18,7 +18,8 @@
     "start": "node server/index.js",
     "test": "echo \"Error: pas de tests pour le moment\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development && node server/index.js"
+    "dev": "webpack --mode development && node server/index.js",
+    "lint": "eslint client/components/*/.tsx --fix"
   },
   "devDependencies": {
     "@types/react": "^17.0.21",
